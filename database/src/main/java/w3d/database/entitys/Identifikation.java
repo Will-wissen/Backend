@@ -6,15 +6,19 @@ import javax.persistence.*;
 
 
 @Entity
-@Table(
-        name = "Identifikation"
-)
+@Table(name = "Identifikation")
+
 public class Identifikation {
     @Id
     private Identification typ;
 
     @Id
     private String value;
+
+    @ManyToOne(cascade = CascadeType.ALL)
+    private Person person;
+
+    public Identifikation(){}
 
     public Identifikation(Identification type, String value){
         this.typ = type;
