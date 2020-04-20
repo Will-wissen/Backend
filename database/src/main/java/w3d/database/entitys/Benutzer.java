@@ -1,7 +1,7 @@
 package w3d.database.entitys;
 
 
-import w3d.database.userTypes.UserType;
+import w3d.database.enums.UserType;
 
 import javax.persistence.*;
 import javax.validation.constraints.NotNull;
