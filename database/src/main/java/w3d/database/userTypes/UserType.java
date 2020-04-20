@@ -1,6 +1,6 @@
 package w3d.database.userTypes;
 
-public enum userType {
+public enum UserType {
     creater,
     root,
     teacher,
